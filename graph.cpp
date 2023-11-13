@@ -7,6 +7,12 @@ Graph::Graph(int maxNodeIncremented) /*: V(maxNodeIncremented), adj(maxNodeIncre
     adj.resize(maxNodeIncremented);
 }
 
+/**
+ * @brief Adds an edge to the graph between two vertices.
+ * 
+ * @param u The source vertex.
+ * @param v The destination vertex.
+ */
 void Graph::addEdge(int u, int v) {
     adj[u].push_back(v);
 
@@ -27,6 +33,13 @@ void Graph::addEdge(int u, int v) {
 
 
 
+/**
+ * @brief Finds all cycles in the graph.
+ * 
+ * This method searches for all cycles in the graph using depth-first search algorithm.
+ * (not implemented yet).
+ * 
+ */
 void Graph::findCycles() {
     cout << "This will search for cycles, but is only stub for now..." << endl;
 }

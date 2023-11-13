@@ -6,6 +6,12 @@
 
 using namespace std;
 
+/**
+ * @brief The main function reads a file with edges and creates a graph. 
+ * It then finds all cycles in the graph and prints them to the console (not implemented yet)
+ * 
+ * @return int 
+ */
 int main() {
     ifstream file("edges.txt");
     string line;
