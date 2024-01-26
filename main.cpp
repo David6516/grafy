@@ -12,8 +12,18 @@ using namespace std;
  * 
  * @return int 
  */
-int main() {
-    ifstream file("edges.txt");
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        cout << "Usage: ./program <filename>" << endl;
+        return 1;
+    }
+
+    string filename = argv[1];
+    ifstream file(filename);
+    if (!file.is_open()) {
+        cout << "Failed to open file: " << filename << endl;
+        return 1;
+    }
     string line;
     int maxNode = 0;
 
